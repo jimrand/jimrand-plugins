@@ -181,3 +181,138 @@ Real examples of AI-generated text humanized across different content types and 
 - **Destroyed the listicle.** Five generic takeaways replaced with one specific, concrete insight about how the MBA changed the author's actual work.
 - **Rewrote the CTA.** "Don't let fear hold you back" is empty motivation. The rewrite offers a real decision framework.
 - **Cut the hashtag spam.** One or two relevant hashtags max, or none.
+
+---
+
+## Example 6: Technical README (Tone: Clear, Direct)
+
+### Before (AI-generated)
+
+> ## Overview
+>
+> **DataSync Pro** is a robust, comprehensive data synchronization library that streamlines the process of keeping your databases in perfect harmony. Whether you're a seasoned developer or just embarking on your data management journey, DataSync Pro offers a multifaceted solution that facilitates seamless real-time data replication across multiple environments.
+>
+> ### Key Features
+>
+> - **Blazing Fast Performance:** Leveraging cutting-edge algorithms to ensure lightning-fast synchronization speeds
+> - **Rock-Solid Reliability:** Built with a robust architecture that guarantees data integrity across all operations
+> - **Effortless Integration:** Seamlessly integrates with your existing tech stack, requiring minimal configuration
+> - **Comprehensive Monitoring:** Features an intuitive dashboard that provides holistic visibility into all sync operations
+>
+> ### Getting Started
+>
+> Embarking on your DataSync Pro journey is incredibly straightforward. Simply install the package and you'll be up and running in no time!
+
+### After (Humanized)
+
+> ## What this does
+>
+> DataSync Pro syncs data between databases in real time. It handles PostgreSQL, MySQL, and MongoDB, runs as a background process, and recovers automatically if a connection drops.
+>
+> ### Features
+>
+> - Real-time replication with sub-second latency on datasets under 10GB
+> - Conflict resolution via last-write-wins or custom merge functions
+> - Dashboard at `localhost:8080` showing sync status, throughput, and error logs
+> - Works with Docker, Kubernetes, or bare metal — config is a single YAML file
+>
+> ### Getting started
+>
+> Install it:
+
+### What changed and why
+
+- **Cut every marketing adjective.** "Blazing fast," "rock-solid," "effortless," "comprehensive" — none tell a developer anything useful. Replaced with specifics: sub-second latency, single YAML file, named databases.
+- **Removed the copula avoidance.** "Offers a multifaceted solution that facilitates" → just says what it does.
+- **Fixed the list items.** Each original item was `**Bold Label:** marketing sentence`. The rewrite makes each item a concrete capability.
+- **Killed the journey metaphor.** "Embarking on your DataSync Pro journey" does not belong in a README. Replaced with "Install it:" and the actual command.
+- **Sentence case heading.** "Key Features" → "Features"; "Getting Started" → "Getting started."
+
+---
+
+## Example 7: Social Media Post (Tone: Casual, Energetic)
+
+### Before (AI-generated)
+
+> Exciting news! 🚀 We're thrilled to announce that our team has been working tirelessly to bring you something truly game-changing! 💡
+>
+> Introducing our brand new AI-powered analytics dashboard — not just a tool, but a complete transformation of how you understand your data! 🧠✨
+>
+> Key highlights:
+> ✅ Real-time insights at your fingertips
+> ✅ Intuitive design that anyone can navigate
+> ✅ Comprehensive reports generated in seconds
+> ✅ Seamless integration with your favorite tools
+>
+> We believe this represents a pivotal moment in making data accessible to everyone. The future of analytics is here, and we couldn't be more excited to share it with you!
+>
+> Drop a 🔥 if you're ready to level up your data game!
+>
+> #Analytics #AI #DataDriven #Innovation #TechNews #ProductLaunch
+
+### After (Humanized)
+
+> We shipped a new analytics dashboard today.
+>
+> The short version: you connect your data sources, and it builds reports automatically. No SQL, no spreadsheet wrangling. It updates live, so you're not looking at yesterday's numbers.
+>
+> We built it because our own team was spending ~4 hours a week pulling the same reports manually. If you're doing something similar, this might save you real time.
+>
+> Early access is open — link in bio. Honest feedback welcome; we're still iterating.
+
+### What changed and why
+
+- **Stripped the emoji barrage.** The original had 8 emoji in a product announcement. The rewrite has zero, appropriate for the professional-casual tone of a product launch.
+- **Cut "not just X, but Y."** "Not just a tool, but a complete transformation" is AI rhetorical filler. The rewrite says what the product does.
+- **Removed significance inflation.** "A pivotal moment in making data accessible to everyone" — it's a dashboard, not a civil rights milestone.
+- **Replaced the check-mark list with specifics.** "Real-time insights at your fingertips" → "It updates live, so you're not looking at yesterday's numbers."
+- **Cut hashtag spam.** Six hashtags is AI behavior. Zero or one relevant tag is more credible.
+- **Added a real reason for building it.** "4 hours a week pulling the same reports" gives the product a human origin story.
+
+---
+
+## Example 8: Academic Abstract (Tone: Formal, Precise)
+
+### Before (AI-generated)
+
+> This study delves into the multifaceted relationship between urban green spaces and community well-being, utilizing a comprehensive mixed-methods approach. Leveraging data from 12 metropolitan areas, our analysis underscores the pivotal role that accessible parks and gardens play in fostering social cohesion and enhancing mental health outcomes. The findings reveal that communities with robust green infrastructure demonstrate significantly improved indicators across multiple wellness dimensions. Furthermore, this research highlights the intricate interplay between environmental design and human behavior, offering nuanced insights that can inform holistic urban planning strategies. These results hold significant implications for policymakers seeking to navigate the complex landscape of sustainable urban development.
+
+### After (Humanized)
+
+> This study examines the relationship between urban green spaces and community well-being using surveys, interviews, and GIS mapping across 12 U.S. metropolitan areas (n=4,200 residents, 36 interviews). We found that residents living within a 10-minute walk of a maintained park reported 18% higher social trust scores and 23% lower self-reported anxiety compared to matched controls. The association was strongest in neighborhoods with household incomes below $45,000, suggesting green space access may partially offset health disparities linked to income. These findings have practical implications for cities allocating parks budgets, particularly regarding placement and maintenance priorities. Two limitations deserve note: our survey response rate in three cities fell below 40%, and we did not control for pre-existing neighborhood selection effects.
+
+### What changed and why
+
+- **Replaced every high-signal word.** "Delves," "multifaceted," "comprehensive," "leveraging," "underscores," "pivotal," "fostering," "robust," "intricate," "nuanced," "holistic," "navigate," "landscape" — that is 13 AI-favorite words in one paragraph. The rewrite uses none of them.
+- **Added actual numbers.** The original makes claims ("significantly improved indicators") without data. The rewrite includes sample size, effect sizes, and specific metrics.
+- **Cut the nominalizations.** "Enhancing mental health outcomes" → "lower self-reported anxiety." "Fostering social cohesion" → "higher social trust scores."
+- **Acknowledged limitations.** AI abstracts almost never mention weaknesses. A real researcher includes them because reviewers will ask.
+- **Kept the formal register.** The rewrite is still academic — it just reads like a human academic wrote it, not a language model summarizing a prompt.
+
+---
+
+## Example 9: Neighborhood Description (Tone: Informative, Warm)
+
+### Before (AI-generated)
+
+> Nestled along the banks of the scenic Willow Creek, the vibrant neighborhood of Maplewood stands as a testament to the rich tapestry of community life. This bustling enclave boasts a breathtaking array of locally-owned shops, artisanal cafés, and farm-to-table restaurants that showcase the area's commitment to sustainable living.
+>
+> Maplewood's tree-lined streets offer a palpable sense of warmth and belonging, fostering connections among its diverse residents. The neighborhood serves as a hub for cultural events, including the renowned annual Maplewood Arts Festival, which underscores the community's deep-rooted appreciation for creative expression.
+>
+> Whether you're seeking a vibrant urban experience or a tranquil retreat from the hustle and bustle, Maplewood offers something for everyone. This hidden gem continues to attract families, young professionals, and retirees alike, cementing its reputation as one of the region's most sought-after destinations.
+
+### After (Humanized)
+
+> Maplewood runs along Willow Creek on the east side of the city. It's a residential neighborhood with a commercial strip on Elm Street — about 15 blocks of restaurants, a bookstore, a hardware store that's been there since 1987, and more coffee shops than the population probably warrants.
+>
+> The area is walkable by Midwest standards, meaning you can get to the grocery store on foot but you'll still want a car for most errands. Rent is mid-range: cheaper than downtown, more expensive than the suburbs. The Maplewood Arts Festival in June is the big annual event, pulling around 10,000 people over a weekend.
+>
+> Families, younger renters, and retirees all live here, which gives the blocks a different feel depending on time of day. Friday nights on Elm Street are loud. Tuesday mornings are not.
+
+### What changed and why
+
+- **Eliminated the promotional vocabulary cluster.** "Nestled," "vibrant" (used twice), "testament," "rich tapestry," "bustling," "breathtaking," "palpable," "hidden gem" — this is the AI geographic description starter pack. The rewrite uses none of them.
+- **Restored copula verbs.** "Stands as a testament" → "runs along." "Boasts a breathtaking array" → "has." "Serves as a hub" → "is."
+- **Replaced vague warmth with specific detail.** "A palpable sense of warmth and belonging" → "a hardware store that's been there since 1987." The specific detail conveys warmth better than the abstract claim.
+- **Cut significance inflation.** A neighborhood doesn't need to be "a testament to the rich tapestry of community life." It's a neighborhood. Describing it accurately is enough.
+- **Added an honest observation.** "More coffee shops than the population probably warrants" and the Friday/Tuesday contrast show a human perspective — someone who has actually been there and noticed things.

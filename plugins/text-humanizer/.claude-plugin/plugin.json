@@ -1,9 +1,9 @@
 {
   "name": "text-humanizer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Detect AI-written content and rewrite it to sound naturally human while preserving tone",
   "author": {
     "name": "Jim Rand"
   },
-  "keywords": ["copy-editing", "humanize", "ai-detection", "writing", "tone"]
+  "keywords": ["copy-editing", "humanize", "ai-detection", "writing", "tone", "em-dash", "formatting"]
 }

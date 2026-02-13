@@ -2,6 +2,8 @@
 
 When a word or phrase below appears at high frequency in the text, consider replacing it. These are not banned words — they become tells only through overuse or when they appear in contexts where a human would choose something simpler.
 
+Note: AI vocabulary preferences shift across model versions. Words that were strong signals in 2023-24 (like "delve") may weaken as models are retrained, while new patterns emerge. Weight structural and rhetorical patterns more heavily than individual word occurrences. See `research-sources.md` for the studies behind these lists.
+
 ## High-Signal AI Words
 
 | AI-favorite | Human alternatives |
@@ -28,6 +30,48 @@ When a word or phrase below appears at high frequency in the text, consider repl
 | resonate | connect, hit home, strike a chord, land |
 | synergy | collaboration, combined effect, teamwork |
 | paradigm | model, framework, approach, way of thinking |
+| testament (to) | proof, evidence, sign, shows |
+| showcasing | showing, highlighting, demonstrating |
+| palpable | clear, obvious, noticeable, unmistakable |
+| intricate | detailed, complex, fine, elaborate |
+| realm | area, field, domain, world |
+| meticulous | careful, detailed, thorough, precise |
+| nestled | located, set, sitting (or just name the place directly) |
+| vibrant | lively, active, energetic (or often just cut — it's usually filler) |
+| bustling | busy, active, crowded (same note — often filler in AI descriptions) |
+| breathtaking | striking, impressive (or replace with a specific description of what makes it remarkable) |
+| comprehensive | full, complete, thorough (when overused — fine in moderation) |
+| garner / garnered | get, earn, attract, receive, win |
+
+## Copula Avoidance Patterns — Restore Simple Verbs
+
+AI systematically avoids "is," "has," "are," and "was," replacing them with more elaborate constructions. When you spot these, the fix is usually to put the simple verb back.
+
+| AI version | Human version |
+|---|---|
+| serves as a | is a |
+| stands as a testament to | shows, proves, is proof of |
+| boasts (an impressive array of) | has |
+| features (a wide range of) | has, includes, offers |
+| holds significance | matters, is important |
+| represents a cornerstone of | is central to, is a key part of |
+| functions as | is, works as |
+| constitutes a | is a |
+| plays a pivotal role in | is important to, shapes, drives |
+
+## Participial Phrase Alternatives
+
+AI overuses "-ing" constructions, especially at the start of sentences. When you see multiple in a short span, restructure most of them.
+
+| AI version | Alternatives |
+|---|---|
+| Offering X, the company... | The company offers X. / The company's X includes... |
+| Building on Y, the team... | The team built on Y. / After Y, the team... |
+| Combining A with B, the product... | The product combines A and B. / A and B work together in... |
+| Leveraging decades of experience, the firm... | The firm has decades of experience. / With 30 years of... |
+| Showcasing a commitment to quality, the brand... | The brand is committed to quality. / Quality shows up in... |
+
+Don't eliminate all participial phrases — one or two in a longer piece is fine. The tell is frequency and clustering.
 
 ## AI Transition Phrases — Cut or Replace
 
@@ -67,6 +111,32 @@ These add no information and signal conversational AI:
 - "That's an excellent observation."
 - "You raise a valid point."
 
+## Communication Artifacts — Always Cut from Standalone Content
+
+These are traces of chatbot conversation that don't belong in documents, emails, or articles:
+
+- "I hope this helps!"
+- "Let me know if you have any questions!"
+- "Feel free to reach out if you need anything else!"
+- "Let me break this down for you:"
+- "Here's what you need to know:"
+- "As of my last update..."
+- "Based on available information..."
+- "There are several key factors to consider:"
+
+If the content will live as a standalone piece (not a chat transcript), these should be removed entirely.
+
+## AI Rhetorical Constructions — Reduce Frequency
+
+These structures are not wrong, but AI uses them at rates well above human writing. If you see multiple in one piece, cut most of them.
+
+| AI construction | What to do |
+|---|---|
+| Not just X, but Y | Use once per piece at most. Otherwise, rephrase: "X, and also Y" or just "X and Y." |
+| While X, it also Y (compulsive balance) | Take a side. Or state both but without the hedging frame. |
+| Despite [challenges], [subject] continues to [triumph] | Be specific about the challenges and honest about whether the outcome was actually a triumph. |
+| [Subject] is more than just X — it's Y | Usually the "more than just" framing is unnecessary. Just say what it is. |
+
 ## AI Modifier Stacking — Reduce to One
 
 When AI stacks adjectives or adverbs, keep the strongest one:
@@ -93,3 +163,5 @@ These words are fine in some contexts but overused by AI in others:
 **"Key" (adjective)** — AI loves "key stakeholders," "key takeaways," "key insights." Replace some with "main," "important," "central," or just cut: "key takeaways" → "takeaways."
 
 **"Crucial" / "Critical" / "Essential"** — AI marks everything as urgent. If everything is crucial, nothing is. Use these sparingly and mean it.
+
+**"Core" (adjective)** — AI uses this increasingly as a modifier: "core values," "core functionality," "core principles." Often replaceable with "main" or just cut entirely: "core values" → "values."
