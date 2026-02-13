@@ -21,6 +21,18 @@
       "license": "MIT",
       "keywords": ["resume", "career", "ats", "humanize", "job-search"],
       "category": "career"
+    },
+    {
+      "name": "text-humanizer",
+      "source": "./plugins/text-humanizer",
+      "description": "Detect AI-written content and rewrite it to sound naturally human while preserving tone",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jim Rand"
+      },
+      "license": "MIT",
+      "keywords": ["copy-editing", "humanize", "ai-detection", "writing", "tone"],
+      "category": "writing"
     }
   ]
 }
