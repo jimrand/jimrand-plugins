@@ -1,0 +1,9 @@
+{
+  "name": "resume-coach",
+  "version": "1.0.0",
+  "description": "Resume review and optimization: detect AI writing patterns, improve structure and tone for any career level, and optimize for ATS systems",
+  "author": {
+    "name": "Jim Rand"
+  },
+  "keywords": ["resume", "career", "ATS", "humanize", "job search"]
+}

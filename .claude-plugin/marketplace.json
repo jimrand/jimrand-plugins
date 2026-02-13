@@ -1,0 +1,26 @@
+{
+  "name": "jimrand-plugins",
+  "owner": {
+    "name": "Jim Rand",
+    "email": "jimrand00@gmail.com"
+  },
+  "metadata": {
+    "description": "Career and professional development plugins for Claude",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "resume-coach",
+      "source": "./plugins/resume-coach",
+      "description": "Resume review and optimization: detect AI writing patterns, improve structure and tone for any career level, and optimize for ATS systems",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jim Rand"
+      },
+      "license": "MIT",
+      "keywords": ["resume", "career", "ats", "humanize", "job-search"],
+      "category": "career"
+    }
+  ]
+}
