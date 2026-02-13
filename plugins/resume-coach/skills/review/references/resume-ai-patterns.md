@@ -155,3 +155,82 @@ Some patterns are standard resume conventions, not AI tells:
 - **Entry-level**: AI tells are common because candidates have less substance. Flag but be generous.
 - **Mid-level**: Most common level for AI generation. Apply full scrutiny.
 - **Senior/Executive**: Some formality that looks AI-generated is appropriate. "Established a governance framework" is fine for a VP. Focus on substance over style at this level.
+
+## Style & Formatting Tells
+
+### Em Dash Overuse
+AI uses em dashes (—) where commas, colons, periods, or parentheses would be more natural. In resumes, this most commonly appears in summary paragraphs and cover letters.
+
+**Signal**: More than 1 em dash per 200 words in resume text.
+
+**Fix**: Replace each em dash with the punctuation that fits the grammatical relationship:
+- Non-restrictive aside → commas or parentheses
+- Introducing a list or explanation → colon
+- Connecting independent clauses → period or semicolon
+- Dramatic pause (rare in resumes) → keep the em dash
+
+See punctuation-patterns.md for the full decision framework.
+
+### Bold Overuse
+AI bolds key terms, list headers, and emphasis phrases excessively. In resumes, this often appears as every skill or achievement term bolded inline.
+
+**Signal**: More than 3 bolded terms per section in flowing text (skills lists with bold headers are acceptable).
+
+### Uniformly Formatted Bullets
+AI creates bullets where every item has identical length, structure, and opening pattern. Human resume bullets naturally vary — some are one line, some are two, some start with different verb types.
+
+**Signal**: All bullets in a role within 20% of the same word count AND identical grammatical opening.
+
+## Content Inflation Tells
+
+### Significance Inflation
+AI elevates routine work with language reserved for major achievements. A process improvement becomes "a transformative initiative." A tool migration becomes "a pivotal shift in organizational capability."
+
+**Signal**: Language scale dramatically exceeds the actual scope of the work described.
+
+**Fix**: Match language to actual scope. Let metrics prove significance rather than adjectives.
+
+### Vague Attributions
+"Industry best practices," "proven methodologies," "widely recognized frameworks" — authoritative framing that names nothing specific.
+
+**Signal**: Authority claims without specific named sources, tools, or frameworks.
+
+**Fix**: Name the specific practice, methodology, or framework. Or cut the attribution.
+
+## Communication Artifacts
+
+These should NEVER appear in a resume. Flag with high confidence.
+
+- "I hope this helps!"
+- "Feel free to reach out"
+- "Let me break this down"
+- "Here's what you need to know"
+- "As of my last update"
+- "Based on available information"
+
+These most commonly leak into cover letters and LinkedIn summaries when AI-generated text is pasted without cleanup.
+
+## Signal Strength Guide
+
+Not all tells carry equal weight. Use this to calibrate confidence:
+
+**High signal — one occurrence is meaningful:**
+- Communication artifacts (chatbot closers, disclaimer language) in resume or cover letter
+- "In today's fast-paced [industry] landscape" or equivalent clichéd openers
+- Significance inflation on clearly entry/mid-level work
+- Filler affirmations ("Great question!" in a cover letter)
+- "Proven track record of..." (the most common AI resume cliché)
+
+**Medium signal — look for 2+ occurrences or clustering:**
+- Em dash overuse (check frequency across full document)
+- Copula avoidance patterns
+- Modifier stacking
+- Participial phrase openings on bullets
+- "Not just X, but Y" constructions
+- Vague authority endings
+
+**Low signal — only meaningful as part of a broader pattern:**
+- Individual uses of "ensure," "key," "strategic," "comprehensive"
+- Single passive voice construction
+- One smooth transition phrase
+- One use of "spearheaded" (it's a tell in clusters, fine alone)
