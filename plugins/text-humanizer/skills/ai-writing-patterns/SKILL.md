@@ -6,7 +6,7 @@ description: >
   "copy edit for naturalness", "rewrite to sound less robotic", "check if this
   sounds AI-generated", or needs guidance on making written content feel
   authentically human while preserving its original tone.
-version: 0.1.0
+version: 1.0.0
 ---
 
 # AI Writing Pattern Detection & Humanization

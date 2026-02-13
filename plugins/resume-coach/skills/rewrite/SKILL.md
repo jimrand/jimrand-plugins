@@ -6,7 +6,7 @@ description: >
   "clean up my resume bullets", "reword my resume", or wants AI-sounding
   text in their resume rewritten with annotations explaining each change.
   Works for entry-level through executive resumes.
-version: 0.1.0
+version: 1.0.0
 ---
 
 # Resume Rewrite

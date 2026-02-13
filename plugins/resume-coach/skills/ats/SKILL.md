@@ -7,7 +7,7 @@ description: >
   "check keywords", or wants to improve how their resume performs in
   applicant tracking systems. Optionally accepts a job description
   to match against.
-version: 0.1.0
+version: 1.0.0
 ---
 
 # ATS Optimization

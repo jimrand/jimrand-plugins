@@ -6,7 +6,7 @@ description: >
   "is my resume AI-sounding", "how does my resume look", or wants
   feedback on resume quality, structure, tone, or ATS readiness.
   Works for entry-level through executive resumes.
-version: 0.1.0
+version: 1.0.0
 ---
 
 # Resume Review
