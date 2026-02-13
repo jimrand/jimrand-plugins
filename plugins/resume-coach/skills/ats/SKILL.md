@@ -4,10 +4,14 @@ description: >
   This skill should be used when the user asks to "optimize for ATS",
   "check ATS compatibility", "keyword optimize my resume",
   "will my resume pass ATS", "match my resume to a job description",
-  "check keywords", or wants to improve how their resume performs in
-  applicant tracking systems. Optionally accepts a job description
-  to match against.
-version: 1.0.0
+  "check keywords", "USAJOBS optimization", or wants to improve how
+  their resume performs in applicant tracking systems or federal
+  scoring systems. Works for all resume and CV types including federal
+  (USAJOBS), academic, legal, medical, consulting, tech, executive,
+  military transition, education, nonprofit, trades, creative,
+  and EU/Europass formats. Optionally accepts a job description
+  or vacancy announcement to match against.
+version: 1.1.0
 ---
 
 # ATS Optimization
@@ -21,6 +25,22 @@ Read the resume from a file path, upload, or pasted text. If not provided, ask f
 Optionally accept a job description to match against. Ask: "Do you have a specific job description you'd like me to match against, or should I analyze for general keyword coverage based on the roles your resume targets?"
 
 ## Process
+
+### Step 0: Document Type Identification
+
+Same as review skill. Skip if type context already exists.
+
+**After identification, check ATS applicability:**
+
+If the document type has "Not applicable" for ATS (academic, Europass, creative), inform the user:
+
+"This is a [type] — it's evaluated by [evaluation method], not by ATS systems. ATS optimization isn't relevant for this document type. Would you like me to [suggest appropriate optimization for this type] instead?"
+
+If the document type is Federal Resume, inform the user:
+
+"Federal resumes are evaluated through USAJOBS HR scoring, not commercial ATS systems. The keyword and format rules are different. I can analyze your resume against USAJOBS-specific requirements instead. Would you like to proceed with federal-specific optimization?"
+
+Only proceed with the standard ATS analysis for document types where ATS is applicable.
 
 ### Step 1: Format & Parsing Check
 
@@ -37,6 +57,20 @@ Check for format issues that cause ATS parsing failures:
 - **Abbreviations**: Any abbreviation not also spelled out at least once
 
 Report each issue with severity: will break parsing / may cause issues / minor risk.
+
+### Federal-Specific Analysis (if document type is Federal Resume)
+
+If the user has provided a vacancy announcement or job description:
+
+1. Extract KSAs from the vacancy announcement
+2. Map each KSA to where it's addressed in the resume
+3. Check for verbatim or near-verbatim language matching
+4. Identify KSAs that are missing or only implied
+5. Check specialized experience coverage
+6. Verify all required data fields are present
+7. Estimate scoring potential on the 70-100 point scale
+
+Present as a federal scoring analysis rather than an ATS compatibility check.
 
 ### Step 2: Keyword Coverage
 
