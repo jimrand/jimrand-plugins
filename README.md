@@ -5,13 +5,16 @@ A plugin marketplace for Claude Code and Cowork.
 ## Available Plugins
 
 ### resume-coach
-AI-powered resume review and optimization. Detects AI writing patterns,
-improves structure and tone for any career level, and optimizes for ATS.
+AI-powered resume and CV review, rewriting, and optimization for all document
+types: standard US, federal, academic, legal, medical, consulting, tech,
+executive, military transition, education, nonprofit, trades, creative, and
+EU/international formats.
 
 **Skills included:**
-- `review` — Comprehensive resume analysis with AI pattern detection
-- `rewrite` — Rewrite flagged sections with annotated changes
-- `ats` — ATS-specific optimization with optional job description matching
+- `identify` — Detect document type, structural format, and regional conventions
+- `review` — Type-calibrated analysis with AI detection across seven categories
+- `rewrite` — Rewrite flagged sections with type-appropriate conventions
+- `ats` — Evaluation system optimization (ATS, USAJOBS scoring, or alternatives)
 
 ### text-humanizer
 Detect AI-written content and rewrite it to sound naturally human while
@@ -32,10 +35,12 @@ preserving the original tone, meaning, and factual content.
 ## Usage
 
 ### resume-coach
-Upload a resume, then run:
-1. `/resume-coach:review` for full analysis
-2. `/resume-coach:rewrite` to fix flagged sections
-3. `/resume-coach:ats` with a job description for targeted optimization
+Upload a resume or CV, then run:
+1. `/resume-coach:review` — identifies type, confirms, then delivers full analysis
+2. `/resume-coach:rewrite` — fixes flagged sections with type-appropriate rewrites
+3. `/resume-coach:ats` — optimizes for the right evaluation system
+
+Or run `/resume-coach:identify` standalone to check the document type first.
 
 ### text-humanizer
 Paste text or provide a file path:
@@ -43,6 +48,12 @@ Paste text or provide a file path:
 2. `/ai-detect` to scan for AI patterns without rewriting
 
 ## Changelog
+
+### resume-coach
+
+**v1.1.0** — Added document type/style recognition supporting 17 resume types (federal, academic, tech, legal, medical, consulting, executive, IB/PE, education, nonprofit, military transition, skilled trades, creative, Europass, UK CV, German CV, standard US). New `/resume-coach:identify` skill for type detection with user confirmation. All existing skills (review, rewrite, ats) now type-aware with calibrated AI detection, type-specific structure evaluation, and appropriate evaluation system routing. Integrated text-humanizer v1.1.0 improvements: expanded AI detection from 4 to 7 categories, signal strength guide, copula/participial pattern detection, and research source citations. 17 type-specific reference files, each with required sections, AI detection calibration, evaluation system details, and common mistakes.
+
+**v1.0.0** — Initial release. 4 AI detection categories, career level calibration, ATS optimization, `/review`, `/rewrite`, and `/ats` skills.
 
 ### text-humanizer
 

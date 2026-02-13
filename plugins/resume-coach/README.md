@@ -41,3 +41,25 @@ Typical workflow:
 3. Run `/resume-coach:ats` — optimizes for the right evaluation system
 
 Or run `/resume-coach:identify` standalone to check what type your document is before deciding what to do next.
+
+## Changelog
+
+### v1.1.0
+
+**Document type/style recognition.** New `/resume-coach:identify` skill detects document type, structural format, and regional conventions from 50+ signals. Supports 17 resume types: standard US, federal, academic, tech, legal, medical, consulting, IB/PE, executive, education, nonprofit, military transition, skilled trades, creative, Europass, UK CV, and German CV. User confirmation required before analysis proceeds.
+
+**All skills now type-aware.** Review, rewrite, and ATS skills call identify as Step 0. Structure evaluation uses type-specific required/optional sections. AI detection calibration adjusts sensitivity per type (e.g., formal federal language is expected, not flagged). ATS check routes to the correct evaluation system — commercial ATS, USAJOBS HR scoring, committee review, or notes non-applicability.
+
+**Expanded AI detection.** Detection expanded from 4 to 7 categories: added style & formatting tells (em dash overuse, bold overuse, uniformly formatted bullets), content inflation tells (significance inflation, vague attributions), and communication artifacts (chatbot closers, metacommentary, disclaimer language). Signal strength guide classifies each tell as high, medium, or low signal.
+
+**New humanization patterns.** Added copula avoidance patterns (restoring "is"/"has"/"are" where AI avoids them), participial phrase alternatives, and em dash decision framework for punctuation fixes.
+
+**17 type-specific reference files.** One file per document type with required sections, length rules, content rules, AI detection calibration, evaluation system details, career level mapping, and common mistakes.
+
+**Federal resume support.** USAJOBS-specific analysis path: KSA extraction from vacancy announcements, coverage mapping, specialized experience checks, and scoring estimate on the 70-100 point scale.
+
+**Research citations.** New `research-sources.md` with peer-reviewed sources backing detection patterns (Kobak et al., Reinhart et al., Juzek & Ward, Merrill et al.).
+
+### v1.0.0
+
+Initial release. 4 AI detection categories (structural, lexical, rhetorical, sentence-level), career level calibration (entry through executive), ATS optimization, `/review`, `/rewrite`, and `/ats` skills.
