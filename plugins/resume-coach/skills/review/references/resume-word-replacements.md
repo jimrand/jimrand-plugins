@@ -117,3 +117,48 @@ These add no information and signal AI:
 - "I'm glad you asked."
 
 These appear in cover letters and LinkedIn posts more than resumes, but flag them if found.
+
+## Copula Avoidance Patterns — Restore Simple Verbs
+
+AI systematically avoids "is," "has," "are," and "was." In resumes, this appears as:
+
+| AI version | Human version |
+|---|---|
+| Serves as the primary point of contact for... | Is the primary contact for... |
+| Stands as a testament to the team's dedication | Shows the team's dedication |
+| Boasts an impressive portfolio of... | Has a portfolio of... (or cut "impressive") |
+| Features a comprehensive suite of... | Has / Includes |
+| Holds significance as a... | Is a... / Matters because... |
+| Represents a cornerstone of... | Is central to / Is a key part of |
+| Functions as the lead for... | Is the lead for... / Leads |
+| Plays a pivotal role in... | Is important to / Shapes / Drives |
+
+Note: "Served as" is standard federal resume phrasing and should NOT be flagged in federal resumes.
+
+## Participial Phrase Alternatives
+
+AI overuses "-ing" constructions, especially at the start of bullet points:
+
+| AI version | Fix |
+|---|---|
+| Leveraging decades of experience, led... | Led [specific initiative], drawing on [specific experience] |
+| Driving strategic initiatives across... | Drove [specific initiative] across [named teams] |
+| Delivering measurable results through... | Delivered [specific result] through [specific method] |
+| Building on previous successes, developed... | Developed [specific thing] after [specific prior success] |
+| Showcasing a commitment to quality, implemented... | Implemented [specific quality measure] |
+
+Don't eliminate all participial phrases — one or two per resume is fine. The tell is frequency and clustering.
+
+## Punctuation Fix Guide
+
+### Em Dash Decision Framework
+
+When you encounter an em dash in resume text, ask: what is the grammatical relationship?
+
+| Relationship | Replace with | Example |
+|---|---|---|
+| Non-restrictive aside | Commas or parentheses | "The team — which grew to 15 — delivered on time" → "The team, which grew to 15, delivered on time" |
+| Introducing a list | Colon | "Three priorities — speed, quality, and cost" → "Three priorities: speed, quality, and cost" |
+| Independent clauses | Period or semicolon | "Revenue grew 20% — the team expanded" → "Revenue grew 20%. The team expanded." |
+| Simple attribution | Comma | "The CEO — Maria Chen — announced" → "The CEO, Maria Chen, announced" |
+| Genuine interruption | Keep the em dash | (Rare in resumes — almost never appropriate) |
