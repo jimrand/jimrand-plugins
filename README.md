@@ -1,4 +1,4 @@
-# Jim's Claude Plugins
+# Jim Rand's Claude Plugins
 
 A plugin marketplace for Claude Code and Cowork.
 
