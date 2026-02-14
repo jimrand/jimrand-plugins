@@ -13,13 +13,13 @@
     {
       "name": "resume-coach",
       "source": "./plugins/resume-coach",
-      "description": "Resume review and optimization: detect AI writing patterns, improve structure and tone for any career level, and optimize for ATS systems",
-      "version": "1.0.0",
+      "description": "Resume and CV review, rewriting, and optimization for all document types: standard US, federal, academic, legal, medical, consulting, tech, executive, military transition, education, nonprofit, trades, creative, and EU/international formats. Detects AI writing patterns, calibrates analysis to document type and career level, and optimizes for the appropriate evaluation system (ATS, USAJOBS, committee review, etc.).",
+      "version": "1.1.0",
       "author": {
         "name": "Jim Rand"
       },
       "license": "MIT",
-      "keywords": ["resume", "career", "ats", "humanize", "job-search"],
+      "keywords": ["resume", "CV", "career", "ATS", "humanize", "job-search", "federal", "academic", "USAJOBS", "Europass", "legal", "medical", "consulting", "tech"],
       "category": "career"
     },
     {

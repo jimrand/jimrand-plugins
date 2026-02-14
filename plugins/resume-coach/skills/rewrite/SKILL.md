@@ -5,8 +5,11 @@ description: >
   "fix my resume", "humanize my resume", "make my resume sound human",
   "clean up my resume bullets", "reword my resume", or wants AI-sounding
   text in their resume rewritten with annotations explaining each change.
-  Works for entry-level through executive resumes.
-version: 1.0.0
+  Works for all resume and CV types: standard US, federal, academic,
+  legal, medical, consulting, tech, executive, military transition,
+  education, nonprofit, trades, creative, investment banking,
+  and EU/Europass formats. Entry-level through executive.
+version: 1.1.0
 ---
 
 # Resume Rewrite
@@ -21,25 +24,35 @@ If a review has already been done in this conversation, use those findings as a 
 
 ## Process
 
+### Step 0: Document Type Identification
+
+Same as review skill — run identify, confirm with user, load type-specific reference. Skip if type context already exists in conversation.
+
 ### Step 1: Tone Lock
 
 Before changing any words, lock the target tone.
 
-Read `${CLAUDE_PLUGIN_ROOT}/skills/review/references/career-levels.md` for level-specific tone expectations.
+Read `${CLAUDE_PLUGIN_ROOT}/skills/review/references/career-levels.md` for standard level expectations.
+Read the type-specific reference file for type-appropriate tone guidance.
 
-Determine:
-- Career level (entry / mid / senior / executive)
-- Formality level
-- Energy level
-- Authority level
-
-State the tone profile in one sentence. This is the guardrail — all rewrites must stay within this range.
+**Type-specific tone calibration:**
+- **Federal**: Formal, impersonal, compliance-focused. Do NOT inject personality or casual language.
+- **Academic**: Formal, precise, disciplinary conventions respected. Nominalizations may be appropriate.
+- **Legal**: Precise, formal, concise. Legal terminology preserved.
+- **Tech**: Direct, metrics-driven, technically precise. Some informality acceptable.
+- **Consulting**: Structured, achievement-focused, competency-mapped. No personality flourishes.
+- **Executive**: Commanding, narrative-driven, understated authority. Some formality expected.
+- **Nonprofit**: Mission-aligned, warm but professional. Fundraising metrics expected.
 
 ### Step 2: AI Pattern Scan
 
 Read `${CLAUDE_PLUGIN_ROOT}/skills/review/references/resume-ai-patterns.md` and `${CLAUDE_PLUGIN_ROOT}/skills/review/references/resume-word-replacements.md`.
 
-Scan every bullet and section for AI tells. Categorize each as structural, lexical, rhetorical, or sentence-level. Skip sections that already sound natural.
+Also read the "AI Detection Calibration" section from the type-specific reference file. Apply calibration before flagging.
+
+Scan across all seven categories (structural, lexical, rhetorical, sentence-level, style & formatting, content inflation, communication artifacts). Skip sections that already sound natural.
+
+Use the expanded word replacement reference (`${CLAUDE_PLUGIN_ROOT}/skills/review/references/resume-word-replacements.md`) which now includes copula avoidance patterns, participial phrase alternatives, and the punctuation decision framework.
 
 ### Step 3: Annotated Rewrite
 
